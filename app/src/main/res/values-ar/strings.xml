@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">E_Auction</string>
+    <string name="str_my_products">منتجاتي</string>
+    <string name="str_offered_products">المنتجات المتوفرة</string>
+</resources>

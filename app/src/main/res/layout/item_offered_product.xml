@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:paddingTop="@dimen/item_padding"
+              android:paddingBottom="@dimen/item_padding"
+              android:layout_marginTop="@dimen/item_padding"
+              android:layout_marginBottom="@dimen/item_padding"
+              android:background="@android:color/white"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+    <LinearLayout
+            android:paddingLeft="@dimen/item_padding"
+            android:paddingRight="@dimen/item_padding"
+            android:layout_marginBottom="@dimen/item_margins"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="@dimen/image_user"
+                android:layout_height="@dimen/image_user"
+                android:src="@mipmap/profile"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
+
+        <TextView
+                android:id="@+id/txtUsername"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/username_margin"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/image_user"
+                android:layout_gravity="start"
+                android:text="TextView" />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:paddingLeft="@dimen/item_padding"
+            android:paddingRight="@dimen/item_padding"
+            android:layout_marginBottom="@dimen/item_margins"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/txtProductName"
+                android:textSize="20sp"
+                android:layout_margin="@dimen/item_margins"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="TextView" />
+
+        <TextView
+                android:id="@+id/txtInitialPrice"
+                android:textSize="20sp"
+                android:layout_margin="@dimen/item_margins"
+                android:textColor="@android:color/holo_green_dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="TextView"/>
+
+    </LinearLayout>
+    <LinearLayout
+            android:paddingLeft="@dimen/item_padding"
+            android:paddingRight="@dimen/item_padding"
+            android:layout_marginBottom="@dimen/item_margins"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+        <Button
+                android:id="@+id/btnOfferedProductDetails"
+                android:textColor="@android:color/black"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/btn_product_details"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

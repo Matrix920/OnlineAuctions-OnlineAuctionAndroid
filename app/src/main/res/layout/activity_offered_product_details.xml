@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".activity.OfferedProductDetailsActivity"
+        android:layout_height="fill_parent"
+        android:fitsSystemWindows="true">
+
+    <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="56dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+
+        <!--  Name Label -->
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:text="@string/txt_product_name"
+                    android:background="@android:color/holo_blue_light"
+
+                    android:textSize="20sp"
+                    android:layout_marginBottom="8dp">
+
+            </TextView>
+            <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_blue_dark"
+
+                    android:textSize="20sp"
+                    android:id="@+id/txtProductName"
+                    android:text="@string/txt_product_name"
+                    android:layout_marginBottom="8dp">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:text="@string/txt_initial_price"
+                    android:background="@android:color/holo_blue_light"
+
+                    android:textSize="20sp"
+                    android:layout_marginBottom="8dp">
+
+            </TextView>
+            <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textSize="20sp"
+                    android:background="@android:color/holo_blue_dark"
+                    android:id="@+id/txtInitialPrice"
+                    android:text="@string/txt_initial_price"
+                    android:layout_marginBottom="8dp">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_blue_light"
+
+                    android:textSize="20sp"
+                    android:text="@string/txt_max_bid"
+                    android:layout_marginBottom="8dp">
+
+            </TextView>
+            <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/txtMaxBidOffer"
+                    android:textSize="20sp"
+                    android:background="@android:color/holo_blue_dark"
+                    android:text="@string/txt_max_bid"
+                    android:layout_marginBottom="8dp">
+
+            </TextView>
+        </LinearLayout>
+        <!-- Email Label -->
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/edtBid"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:inputType="number"
+                      android:focusable="true"
+                      android:hint="@string/str_your_bid_offer" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <!-- Signup Button -->
+        <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnBid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:padding="12dp"
+                android:text="@string/str_ok"/>
+
+
+
+    </LinearLayout>
+</ScrollView>
